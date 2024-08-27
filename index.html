@@ -35,6 +35,8 @@
     </script>
 
     <style>
+
+        /* responsive for mobile */
         @media screen and (max-width:640px) {
            .header-btn{
             width: 100%;
@@ -59,6 +61,15 @@
             flex-direction: column;
            }
 
+        }
+
+        /* Custom animations */
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
@@ -402,13 +413,53 @@
 
     <!-- latest portfolio end-->
 
+    <!-- challange part interoir design start -->
+    
+     <section class="py-16 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900">Transform Your Space</h2>
+            <p class="mt-4 text-lg text-gray-600">Discover stunning interior design ideas and create the perfect ambiance for your home.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="card bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl">
+                <img src="../assets/moder-living-room.jpg" alt="Interior Design 1" class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Modern Living Room</h3>
+                    <p class="mt-2 text-gray-600">Elegant and comfortable design for contemporary living spaces.</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl">
+                <img src="./assets/cozy-bedroom.jpg" alt="Interior Design 2" class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Cozy Bedroom</h3>
+                    <p class="mt-2 text-gray-600">Create a serene and restful atmosphere with stylish bedroom decor.</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl">
+                <img src="../assets/chic-dining-room.jpg" alt="Interior Design 3" class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Chic Dining Area</h3>
+                    <p class="mt-2 text-gray-600">Perfectly designed dining spaces for memorable gatherings.</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-8">
+            <a href="#" class="btn btn-primary">Explore More</a>
+        </div>
+    </section>
+
+    <!-- challange part interoir design end -->
+
 
     <!-- Article part start -->
    
-    <div class="bg-red-50 ">
+    <div class="bg-red-50 mt-10">
 
 
-        <div class="w-11/12 mx-auto mt-25 ">
+        <div class="w-11/12 mx-auto mt-10 ">
 
             <div class="w-full space-y-3 mb-4">
                 <div class="flex justify-center items-center">
@@ -590,13 +641,13 @@
 
         </div>
 
-
-
     </div>
+
     <!-- input area ends here -->
+    
+  </main>
 
-
- </main>
+ <!-- main part end -->
 
 </body>
 </html>
